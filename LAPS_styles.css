@@ -4,4 +4,95 @@ header {
     background-color: rgba(0, 0, 0, 0.925);
 }
 
-body img
+
+/* Image styles */
+img#banner {
+    width: 100%;
+}
+
+
+
+/* Nav styles */
+li {
+    display: inline;
+}
+
+#nav li {
+    list-style-type: none;
+    display: block;
+    width: 20%;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+
+#nav a {
+    color: white;
+}
+
+#nav a:hover {
+    color: #f6ae57;
+}
+
+
+
+/* Footer Styles */
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.925);
+    padding: 8px;
+    color: rgba(21, 17, 17, .6);
+    margin: 1px;
+}
+
+footer a {
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+
+
+footer p {
+    width: 10%;
+    display: block;
+    float: left;
+    margin-left: 19%;
+}
+
+footer p::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer p a:link,
+footer p a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+footer p a:active,
+footer p a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#LPS {
+    background-color: #f7941d;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
