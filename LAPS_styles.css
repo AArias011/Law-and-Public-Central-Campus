@@ -1,7 +1,21 @@
 @charset "UTF-8";
 
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 header {
     background-color: rgba(0, 0, 0, 0.925);
 }
 
-body img
+section#banner img {
+    width: 100%;
+}
+
+p#bannerText {
+    position: absolute;
+    top: 60%;
+    left: 20px;
+    color: rgba(2, 1, 1, 0.685);
+    font-size: 16em;
+}
