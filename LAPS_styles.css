@@ -63,8 +63,8 @@ footer a {
 footer p {
     width: 10%;
     display: block;
-    float: left;
-    margin-left: 19%;
+    float: right;
+    /* margin-left: 19%; */
 }
 
 footer p::after {
@@ -93,13 +93,14 @@ footer p a:hover {
 
 #LPS {
     background-color: #f7941d;
-    padding: 20px;
-    font-size: 30px;
+    padding: 15px;
+    font-size: 20px;
     width: 30px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 100%;
 }
+
 section#banner img {
     width: 100%;
 }
@@ -110,4 +111,28 @@ p#bannerText {
     left: 20px;
     color: rgba(2, 1, 1, 0.685);
     font-size: 16em;
+}
+
+p#bannerTextIndex {
+    position: absolute;
+    top: 65%;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.826);
+    font-size: 10em;
+}
+
+p#bannerTextIndexTwo {
+    position: absolute;
+    top: 85%;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.826);
+    font-size: 10em;
+}
+
+/* Media queries */
+@media screen and (max-width: 480px) {
+    nav.horizontal a {
+        font-size: 1.5em;
+        line-height: 2.2em;
+    }
 }
