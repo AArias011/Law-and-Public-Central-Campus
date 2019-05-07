@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.container {
+    top: 5px;
+    text-align: center;
+    color: white;
+}
+
+#bannerTextOne {
+    color: rgba(255, 255, 255, 0.826);
+    position: absolute;
+    bottom: 5%;
+    left: 20px;
+    font-size: 16em;
+}
