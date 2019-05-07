@@ -18,15 +18,23 @@ li {
 #nav li {
     list-style-type: none;
     display: block;
-    width: 20%;
-    float: left;
+    width: 15%;
+    float: right;
     text-decoration: none;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.925);
+    padding: 21px;
+}
+
+
+
+nav img {
+    padding: 6px 0px 6px 20px;
 }
 
 #nav a {
     color: white;
+    font-size: 20px;
+
 }
 
 #nav a:hover {
