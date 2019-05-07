@@ -92,6 +92,14 @@ footer p a:hover {
     color: white;
 }
 
+#footerBanner {
+    width: 12.5%;
+    margin-left: 628px;
+    
+}
+
+
+
 #LPS {
     background-color: #f7941d;
     padding: 15px;
@@ -100,6 +108,7 @@ footer p a:hover {
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
+    margin-top: 10px;
 }
 
 

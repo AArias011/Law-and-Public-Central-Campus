@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+html{
+    background-color: #e7a24d;
+}
+
+
+/* Contact Form Styles */
+/* This code affects the div with a class of col-1-3 a padding and width. */
+div.col-1-3 {
+    padding: .20px;
+    width: 40%;
+    
+}
+/* This code affects the form and give it a box sizing, display, margin-top, position, left, bottom and height. */
+ form {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 0em; 
+    position: relative;
+    left: 655px;
+    bottom: 10px;
+    height: 300px;
+    top: 8px;
+}
+#formHeader{
+    text-align: center;
+    margin-left: 80px;
+}
+
+.input {
+    width: 35%;
+    height: 10%;
+}
+textarea {
+    width: 35%;
+}
+
+
+aside {
+    background: radial-gradient(rgb(255, 255, 255), #e7a24d, #e7a24d);
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 10px;
+    box-decoration-break: center;
+    text-align: center;
+    float: right;
+    padding: 10px;
+    width: 20%;
+    margin-right: 5%;
+    margin-top: 40px;
+}
+aside h1{
+    color: rgb(0, 0, 0);	
+	font-weight: normal;
+	font-size: 2em;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#maps{
+    width: 35%;
+}
