@@ -28,17 +28,23 @@ li {
 
 
 nav img {
-    padding: 6px 0px 6px 20px;
+    padding: 10px 0px 10px 20px;
 }
 
 #nav a {
+    position: relative;
     color: white;
-    font-size: 20px;
 
 }
 
 #nav a:hover {
     color: #f6ae57;
+    transition: opacity 1 0.5s, width 100% 0.5s;
+    transition: color 1s;
+}
+
+#nav a::after {
+    opacity: 0;
 }
 
 /* Image styles */
@@ -95,7 +101,7 @@ footer p a:hover {
 #footerBanner {
     width: 12.5%;
     margin-left: 628px;
-    
+
 }
 
 
@@ -111,6 +117,10 @@ footer p a:hover {
     margin-top: 10px;
 }
 
+/* Map Styles */
+iframe {
+    width: 100%;
+}
 
 /* Media queries */
 @media screen and (max-width: 480px) {
