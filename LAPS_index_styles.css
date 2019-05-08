@@ -1,0 +1,21 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#bannerTextOne {
+    color: rgba(255, 255, 255, 0.826);
+    position: absolute;
+    bottom: 35%;
+    left: 20px;
+    font-size: 10em;
+}
+
+#bannerTextTwo {
+    color: rgba(255, 255, 255, 0.826);
+    position: absolute;
+    bottom: 15%;
+    left: 20px;
+    font-size: 10em;
+}
