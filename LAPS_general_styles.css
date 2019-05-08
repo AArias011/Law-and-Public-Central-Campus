@@ -33,7 +33,7 @@ nav img {
 
 #nav a {
     color: white;
-    font-size: 20px;
+    font-size: 3vh;
 
 }
 
@@ -94,10 +94,16 @@ footer p a:hover {
 
 #footerBanner {
     width: 12.5%;
-    margin-left: 628px;
-    
+    margin-left: 490px;
+
 }
 
+#footerText {
+    color: white;
+    float: left;
+    width: 30%;
+
+}
 
 
 #LPS {
@@ -105,17 +111,42 @@ footer p a:hover {
     padding: 15px;
     font-size: 20px;
     width: 30px;
-    text-align: center;
-    text-decoration: none;
     border-radius: 100%;
     margin-top: 10px;
 }
 
 
 /* Media queries */
-@media screen and (max-width: 480px) {
-    nav.horizontal a {
-        font-size: 1.5em;
-        line-height: 2.2em;
+@media screen and (max-width: 500px) {
+    nav {}
+
+    footer p {
+        float: left;
+    }
+
+    #LPS {
+        width: 200%;
+        margin-left: 150px;
+
+    }
+
+    #footerBanner {
+        margin-right: 350px;
+        float: right;
+        width: 25%;
+        margin-top: -6.9vh;
+    }
+
+    #footerText {
+        margin-right: 25px;
+        float: right;
+        margin-top: -6.9vh;
+        width: 20%;
+
+    }
+
+
+    .icons {
+        padding: 0px 20px;
     }
 }
