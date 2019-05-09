@@ -20,6 +20,7 @@
 
         <div id="nav">
             <nav class="horizontal">
+
                 <ul>
                     <img src="Images/west-mec-logo.png" alt="west-mec-logo">
                     <li><a href="LAPS_contact.html">Contact</a></li>
@@ -32,7 +33,7 @@
         </div>
 
         <div class="container">
-            <img src="Images/contactBanner.jpeg" alt="indexBanner" style="width:100%;">
+            <img src="Images/contactBanner.jpg" alt="indexBanner" style="width:100%;">
         </div>
     </header>
 
@@ -40,35 +41,38 @@
 
     <div class="row">
         <div class="col-1-2">
-            <section id="contactInformation">
-                <aside id="contactAside">
-                    <h1>Contact Information</h1>
-                    <ul>
-                        <p><strong>Instructor Phone Number:</strong></p>
-                        <li>623.209.8070</li>
-                        <br>
-                        <p><strong>Instructor Email:</strong></p>
-                        <li>kimberly.johnson@west-mec.org</li>
-                    </ul>
-                </aside>
-            </section>
+            <aside id="contactAside">
+                <h1>Contact Information</h1>
+                <p><strong>Campus Location</strong></p>
+                <p>6997 N. Glen Harbor Boulevard <br>
+                    Glendale, AZ 85307 <br>
+                    Main Line & Attendance: <br>623-209-8070</p>
+                <p><strong>Instructor Phone Number:</strong></p>
+                <p>623.209.8070</p>
+                <br>
+                <p><strong>Instructor Email:</strong></p>
+                <p>kimberly.johnson@west-mec.org</p>
+            </aside>
         </div>
 
         <div id="contactForm" class="col-1-2">
             <h1 id="formHeader">Contact Form</h1>
-            <div class="col-1-3">
-                <form method="POST" action="https://formspree.io/kimberly.johnson@west-mec.org">
-                    <input class="input" type="email" name="email" placeholder="Your Email" size="35">
-                    <br>
-                    <input class="input" type="name" name="name" placeholder="Full Name">
-                    <br>
-                    <input class="input" type="subject" name="subject" placeholder="Subject">
-                    <br>
-                    <textarea name="message" placeholder="Message"></textarea>
-                    <br>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+            <form method="POST" action="https://formspree.io/kimberly.johnson@west-mec.org">
+                <input class="formStyles" type="email" name="email" placeholder="Your Email" size="35">
+                <br>
+                <br>
+                <input class="formStyles" type="name" name="name" placeholder="Full Name">
+                <br>
+                <br>
+                <input class="formStyles" type="subject" name="subject" placeholder="Subject">
+                <br>
+                <br>
+                <textarea class="formStyles" placeholder="Message"></textarea>
+                <br>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+
         </div>
 
     </div>
@@ -81,20 +85,36 @@
 
     <footer>
 
-        <p>
-            <a href="https://www.youtube.com/user/CareerDrivenED" class="fa fa-youtube" id="LPS"></a>
-        </p>
+        <div class="row">
 
-        <p>
-            <a href="https://instagram.com/westmeclawclass?utm_source=ig_profile_share&igshid=l5hxcca0646f"
-                class="fa fa-instagram" id="LPS"></a>
-        </p>
+            <div class="col-4-10">
+                <img src="Images/Central_white with orange arrows.png" alt="CentralCampus">
+            </div>
 
-        <p>
-            <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-                class="fa fa-google" id="LPS"></a>
-        </p>
+            <div class="col-3-10">
+                <img src="Images/20. Law, Public Safety & Security 2.png" id="footerBanner">
+            </div>
 
+            <div class="col-1-10">
+                <p>
+                    <a href="https://www.youtube.com/user/CareerDrivenED" class="fa fa-youtube" id="LPS"></a>
+                </p>
+            </div>
+
+            <div class="col-1-10">
+                <p>
+                    <a href="https://instagram.com/westmeclawclass?utm_source=ig_profile_share&igshid=l5hxcca0646f"
+                        class="fa fa-instagram" id="LPS"></a>
+                </p>
+            </div>
+
+            <div class="col-1-10">
+                <p>
+                    <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                        class="fa fa-google" id="LPS"></a>
+                </p>
+            </div>
+        </div>
 
     </footer>
 </body>

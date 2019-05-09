@@ -22,10 +22,8 @@ li {
     float: right;
     text-decoration: none;
     text-align: center;
-    padding: 20px;
+    padding: 25px 20px 20px 20px;
 }
-
-
 
 nav img {
     padding: 10px 0px 10px 20px;
@@ -38,14 +36,40 @@ nav img {
 
 }
 
-#nav a:hover {
-    color: #f6ae57;
-    transition: opacity 1 0.5s, width 100% 0.5s;
-    transition: color 1s;
+#nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 22px;
+    background-color: #f7941d;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
 }
 
 #nav a::after {
-    opacity: 0;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 22px;
+    right: 0%;
+    background-color: #f7941d;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#nav a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+
+}
+
+#nav a:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 /* Image styles */
@@ -59,7 +83,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.925);
     padding: 8px;
     color: rgba(21, 17, 17, .6);
-    margin: 1px;
 }
 
 footer a {
@@ -70,15 +93,8 @@ footer a {
 }
 
 footer p {
-    width: 10%;
     display: block;
     float: right;
-}
-
-footer p::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 footer:after {
@@ -100,24 +116,60 @@ footer p a:hover {
 }
 
 #footerBanner {
-    width: 12.5%;
-    margin-left: 490px;
-
+    width: 59%;
+    padding-left: 10%;
+    padding-top: 6px;
 }
 
-#footerText {
-    color: white;
+/* Footer Grid Styles */
+div.row {
+    clear: both;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div[class^="col-"] {
     float: left;
-    width: 30%;
 
 }
 
+div.col-1-10 {
+
+    width: 10%;
+}
+
+div.col-2-10 {
+    width: 30%;
+}
+
+div.col-4-10 {
+    width: 40%;
+}
+
+div.col-4-10 p {
+    color: white;
+}
+
+div.col-4-10 img {
+    width: 40%;
+    margin-left: 20%;
+}
+
+div.col-1-10 p {
+    padding-right: 20%;
+}
 
 #LPS {
     background-color: #f7941d;
-    padding: 15px;
-    font-size: 20px;
-    width: 30px;
+    padding: 16px;
+    font-size: 25px;
+    width: 27px;
+    text-align: center;
+    text-decoration: none;
     border-radius: 100%;
     margin-top: 10px;
 }
@@ -125,39 +177,4 @@ footer p a:hover {
 /* Map Styles */
 iframe {
     width: 100%;
-}
-
-/* Media queries */
-@media screen and (max-width: 500px) {
-    nav {}
-
-    footer p {
-        float: left;
-    }
-
-    #LPS {
-        width: 200%;
-        margin-left: 150px;
-
-    }
-
-    #footerBanner {
-        margin-right: 350px;
-        float: right;
-        width: 25%;
-        margin-top: -6.9vh;
-    }
-
-    #footerText {
-        margin-right: 25px;
-        float: right;
-        margin-top: -6.9vh;
-        width: 20%;
-
-    }
-
-
-    .icons {
-        padding: 0px 20px;
-    }
 }
