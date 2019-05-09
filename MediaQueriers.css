@@ -6,18 +6,22 @@
         text-decoration: none;
         float: left;
         padding-left: 20px;
-        margin-top: 16%;
+        margin-top: 14%;
         font-size: 50px;
         color: white;
         width: 20%;
         margin-bottom: 1px;
     }
+    
+    
+
+    
 
     #homeImage {
         float: left;
         padding-left: 20px;
         margin-top: 10%;
-        width: 70%;
+        width: 60%;
         margin-bottom: 1px;
     }
 
@@ -29,7 +33,7 @@
         display: none;
     }
 
-    div.col-3-10 {
+    div.col-5-10 {
         display: none;
     }
 
@@ -39,10 +43,11 @@
         padding-top: 0px;
 
     }
+
 }
 
 @media screen and (max-width: 1160px) {
-    div.col-3-10 {
+    div.col-5-10 {
         display: none;
     }
 
@@ -58,13 +63,16 @@
         margin-bottom: 1%;
 
     }
+    nav{
+        width: 90%;
+    }
+    
+    
 }
 
-@media screen and (max-width: 650px) {
-    div.col-4-10 {
-        margin-bottom: 13%;
-        width: 40%;
-        margin-right: 5px;
+@media screen and (min-width: 550px) {
+    #nav-toggle{
+        display: none;
     }
 
 
