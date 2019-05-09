@@ -1,28 +1,34 @@
 @charset "UTF-8";
-aside img{
+
+aside img {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-aside h1{
+aside h1 {
     text-align: center;
     font-size: 2.5em;
     padding: 5px 0px 20px 0px;
+    text-decoration: underline
 }
-aside h2{
-text-align: center;
-font-size: 1.5em;
-padding: 15px 0px ;
+
+aside h2 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 15px 0px;
 }
 
 aside {
     background-color: rgba(246, 146, 30, 0.8);
-    
+
 }
-aside::before, aside::after{
+
+aside::before,
+aside::after {
     box-sizing: border-box;
 }
+
 /* Grid Styles */
 div.row {
     clear: both;
@@ -42,7 +48,8 @@ div[class^="col-"] {
 div.col-7-10 {
     width: 70%;
 }
-div.col-3-10{
+
+div.col-3-10 {
     width: 30%;
-    
+
 }

@@ -1,44 +1,14 @@
 @charset "UTF-8";
 
 /* Contact Information Styles */
+aside#contactAside {
+    padding-left: 25px;
+}
 
-section#contactInformation h1 {
-    text-align: center;
-    font-size: 2em;
+aside#contactAside h1 {
+    font-size: 3em;
     padding: 30px 0px;
-}
-
-/* This code affects the form and give it a box sizing, display, margin-top, position, left, bottom and height. */
-form {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    display: block;
-    margin-top: 0em;
-    position: relative;
-}
-
-#formHeader {
-    text-align: center;
-}
-
-.input {
-    width: 100%;
-    position: relative;
-    left: 109%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-textarea {
-    width: 100%;
-    position: relative;
-    left: 109%;
-}
-
-
-form>button {
-    position: relative;
-    left: 109%;
+    text-decoration: underline #f7941d;
 }
 
 /* Contact Form Styles */
@@ -47,11 +17,45 @@ div#contactForm {
 }
 
 div#contactForm h1 {
-    font-size: 2em;
+    text-align: center;
+    font-size: 3em;
     padding: 30px 0px;
+    text-decoration: underline #f7941d;
 }
 
+/* This code affects the form and give it a box sizing, display, margin-top, position, left, bottom and height. */
 
+form {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin-top: 0em;
+    position: relative;
+    margin-left: 32.5%;
+
+
+}
+
+.formStyles {
+    width: 51.6%;
+    position: relative;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #f7941d;
+    font-size: 10px;
+
+}
+
+button {
+    background-color: white;
+    margin-left: 15%;
+    border: none;
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    color: #4b4b4b;
+    border-radius: 5px;
+}
 
 /* Map Styles */
 #maps {
@@ -77,4 +81,5 @@ div[class^="col-"] {
 
 div.col-1-2 {
     width: 50%;
+    padding-bottom: 30px;
 }
