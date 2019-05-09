@@ -177,11 +177,3 @@ div.col-1-10 p {
 iframe {
     width: 100%;
 }
-
-/* Media queries */
-@media screen and (max-width: 480px) {
-    nav.horizontal a {
-        font-size: 1.5em;
-        line-height: 2.2em;
-    }
-}
