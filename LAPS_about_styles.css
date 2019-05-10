@@ -2,8 +2,6 @@
 
 
 aside {
-    background-color: rgba(246, 146, 30, 0.8);
-    height: 100%;
     display: block;
 }
 
@@ -41,6 +39,7 @@ aside p {
 /* Grid Styles */
 div.row {
     clear: both;
+    background-color: #f7941d;
 }
 
 div.row::after {
@@ -56,6 +55,7 @@ div[class^="col-"] {
 
 div.col-7-10 {
     width: 70%;
+    background-color: white;
 }
 
 div.col-3-10 {
