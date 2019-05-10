@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link rel="stylesheet" href="reset_styles.css">
-    <link rel="stylesheet" href="LAPS_general_styles.css">
-    <link rel="stylesheet" href="LAPS_index_styles.css">
+    <link rel="stylesheet" src="CSS" href="reset_styles.css">
+    <link rel="stylesheet" src="CSS" href="LAPS_general_styles.css">
+    <link rel="stylesheet" src="CSS" href="LAPS_index_styles.css">
     <link rel="icon" href="Images/west_mec_arrow_orange_gEn_icon.ico">
+    <link rel="stylesheet" href="MediaQueriers.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,19 +18,26 @@
 
 <body>
     <header>
-<h1>helo</h1>
+
+        <a id="nav-toggle" href="#">&#9776;</a>
+
         <div id="nav">
             <nav class="horizontal">
                 <ul>
-                    <img src="Images/west-mec-logo.png" alt="west-mec-logo">
-                    <li><a href="LAPS_contact.html">Contact</a></li>
-                    <li><a href="LAPS_services.html">Services</a></li>
-                    <li><a href="LAPS_ctso.html">CTSO</a></li>
-                    <li><a href="LAPS_about.html">About</a></li>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-            </nav>
+
+                    <img id="homeImage" src="Images/west-mec-logo.png" alt="west-mec-logo">
+
+
+                    <li><a class="nav" href="LAPS_contact.html">Contact</a></li>
+                    <li><a class="nav" href="LAPS_services.html">Services</a></li>
+                    <li><a class="nav" href="LAPS_ctso.html">CTSO</a></li>
+                    <li><a class="nav" href="LAPS_about.html">About</a></li>
+                    <li><a class="nav" href="index.html">Home</a></li>
         </div>
+
+        </ul>
+        </nav>
+
 
         <div class="container">
             <img src="Images/bannerImageIndex.png" alt="indexBanner" style="width:100%;">
@@ -40,33 +48,53 @@
 
 
     <article>
-        West-MEC programs prepare students to seek many industry certifications or licensure in a field of their choice,
-        providing a pathway to success and career for their future. One of their programs; Law, Public Safety & Security
-        is a two-year program which explores the basic skills used in patrol functions, defensive tactics, use of force
-        and first aid.
+        West-Mec is a public school district in which student can recieve career technical training which aims at
+        preparing them to enter the workforce. Through hands-on experience, leadership training, inclass direction, and
+        mentorship, west-mec programs provides students with the experience they need to work in a specialized career.
+        While in the program, students are given the knowledge they need in order to pass a variety of industry
+        certifications or licensure in a field of their choice, providing a pathway to success and career for their
+        future. One of their programs; Law, Public Safety & Security is a two-year program which explores the basic
+        skills used in patrol functions, defensive tactics, use of force and first aid. From learning first aid to one’s
+        constitutional rights, the programs helps student in preparing for a future career in law enforcement.
+
 
     </article>
 
 
     <footer>
 
-        <p>
-            <a href="https://www.youtube.com/user/CareerDrivenED" class="fa fa-youtube" id="LPS"></a>
-        </p>
+        <div class="row">
 
-        <p>
-            <a href="https://instagram.com/westmeclawclass?utm_source=ig_profile_share&igshid=l5hxcca0646f"
-                class="fa fa-instagram" id="LPS"></a>
-        </p>
+            <div class="col-4-10">
+                <img id="footerLogo" src="Images/Central_white with orange arrows.png" alt="CentralCampus">
+            </div>
 
-        <p>
-            <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-                class="fa fa-google" id="LPS"></a>
-        </p>
+            <div class="col-5-10">
+                <img src="Images/20. Law, Public Safety & Security 2.png" id="footerBanner">
+            </div>
 
-        <img src="Images/20. Law, Public Safety & Security 2.png" id="footerBanner">
+            <div class="col-1-10">
+                <p>
+                    <a href="https://www.youtube.com/user/CareerDrivenED" class="fa fa-youtube" id="LPS"></a>
+                </p>
+            </div>
 
-        
+            <div class="col-1-10">
+                <p>
+                    <a href="https://instagram.com/westmeclawclass?utm_source=ig_profile_share&igshid=l5hxcca0646f"
+                        class="fa fa-instagram" id="LPS"></a>
+                </p>
+            </div>
+
+            <div class="col-1-10">
+                <p>
+                    <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                        class="fa fa-google" id="LPS"></a>
+                </p>
+            </div>
+        </div>
+        <nav>
+
     </footer>
 </body>
 
