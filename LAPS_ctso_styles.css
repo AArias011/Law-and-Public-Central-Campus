@@ -1,0 +1,14 @@
+/* Page Text Styles */
+
+article {
+    padding: 30px;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+article h1 {
+    position: relative;
+    font-size: 2em;
+    text-decoration: underline #f7941d;
+    padding: 30px 0px;
+}
