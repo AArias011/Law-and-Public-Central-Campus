@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 /* Contact Information Styles */
+div#contactInformation {
+    background-color: white;
+
+}
+
 aside#contactAside {
     padding-left: 25px;
 }
@@ -12,9 +17,6 @@ aside#contactAside h1 {
 }
 
 /* Contact Form Styles */
-div#contactForm {
-    background-color: rgb(226, 226, 226);
-}
 
 div#contactForm h1 {
     text-align: center;
@@ -66,6 +68,7 @@ button {
 /* Page Grid Styles */
 div.row {
     clear: both;
+    background-color: rgb(226, 226, 226)
 }
 
 div.row::after {
@@ -81,5 +84,4 @@ div[class^="col-"] {
 
 div.col-1-2 {
     width: 50%;
-    padding-bottom: 30px;
 }

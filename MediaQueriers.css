@@ -2,38 +2,53 @@
 
 /* Media queries */
 @media only screen and (max-width: 550px) {
-    a#navicon {
+    #nav-toggle {
         text-decoration: none;
         float: left;
         padding-left: 20px;
-        margin-top: 40px;
+        margin-top: 14%;
         font-size: 50px;
         color: white;
         width: 20%;
         margin-bottom: 1px;
-
     }
 
-    header nav ul {
-        width: 10%;
-        line-height: 0px;
-
+    #indexH1 {
+        font-size: 30px;
     }
 
-    a#navicon:hover+ul,
-    header nav ul:hover {
-        display: block;
+    #aboutH1 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    #aboutH2 {
+        line-height: 25px;
     }
 
     #homeImage {
         float: left;
-        padding-left: 10px;
-        margin-top: 10px;
-        width: 70%;
-        margin-bottom: 10px;
+        padding-left: 20px;
+        margin-top: 10%;
+        width: 60%;
+        margin-bottom: 1px;
     }
 
+    #formHeader {
+        line-height: 45px;
+    }
 
+    #contactH1 {
+        line-height: 45px;
+    }
+
+    #submit {
+        margin-left: 10px;
+    }
+
+    .nav {
+        display: none;
+    }
 
     div.col-4-10 {
         display: none;
@@ -46,10 +61,8 @@
     div.col-1-10 {
         width: 25%;
         margin-bottom: 8.5%;
-        padding-top: 0px;
-
+        padding-top: 20px;
     }
-
 }
 
 @media screen and (max-width: 1160px) {
@@ -67,7 +80,6 @@
         margin-left: 10%;
         margin-top: 3%;
         margin-bottom: 1%;
-
     }
 
     nav {
@@ -78,9 +90,7 @@
 }
 
 @media screen and (min-width: 550px) {
-    #navicon {
+    #nav-toggle {
         display: none;
     }
-
-
 }
