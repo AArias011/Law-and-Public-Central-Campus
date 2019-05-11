@@ -78,6 +78,11 @@ img#banner {
     position: relative;
 }
 
+#homeImage {
+    float: left;
+    width: 20%;
+}
+
 /* Footer Styles */
 footer {
     background-color: rgba(0, 0, 0, 0.925);
@@ -152,10 +157,11 @@ div.col-4-10 {
 
 div.col-4-10 p {
     color: white;
+
 }
 
 div.col-4-10 img {
-    width: 40%;
+    width: 50%;
     margin-left: 20%;
 }
 
@@ -167,7 +173,7 @@ div.col-1-10 p {
     background-color: #f7941d;
     padding: 16px;
     font-size: 25px;
-    width: 27px;
+    width: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 100%;
