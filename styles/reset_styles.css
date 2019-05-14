@@ -55,6 +55,7 @@ colgroup {
     padding: 0;
     border: 0;
     font-size: 100%;
+    vertical-align: baseline;
     background: transparent;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

@@ -2,16 +2,53 @@
 
 /* Media queries */
 @media only screen and (max-width: 550px) {
-    #nav-toggle {
-        text-decoration: none;
-        float: left;
-        padding-left: 20px;
-        margin-top: 14%;
-        font-size: 50px;
-        color: white;
-        width: 20%;
-        margin-bottom: 1px;
+    label#navButton {
+        display: block;
+        cursor: pointer;
     }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    #nav li {
+        list-style-type: none;
+        display: block;
+        width: 20%;
+        float: right;
+        text-decoration: none;
+        text-align: center;
+        padding: 25px 20px 20px 20px;
+    }
+
+    nav {
+        text-align: center;
+        display: none;
+    }
+
+    nav ul li {
+
+        display: block;
+        margin: 0;
+    }
+
+    li {
+        color: white;
+    }
+
+    input#toggle:checked+nav {
+        display: block;
+    }
+
+
+    .nav {
+        width: 100%;
+    }
+
 
     #indexH1 {
         font-size: 30px;
@@ -27,11 +64,10 @@
     }
 
     #homeImage {
-        float: left;
+        margin: 0 35px;
+        display: block;
         padding-left: 20px;
-        margin-top: 10%;
         width: 60%;
-        margin-bottom: 1px;
     }
 
     #formHeader {
@@ -46,9 +82,7 @@
         margin-left: 10px;
     }
 
-    .nav {
-        display: none;
-    }
+
 
     div.col-4-10 {
         display: none;

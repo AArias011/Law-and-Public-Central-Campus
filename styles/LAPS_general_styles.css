@@ -25,15 +25,22 @@ li {
     padding: 25px 20px 20px 20px;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
 nav img {
-    padding: 10px 0px 10px 20px;
+    /* padding: 10px 0px 10px 20px; */
 }
 
 #nav a {
     position: relative;
     color: white;
     font-size: 3vh;
-
 }
 
 #nav a::before {
@@ -183,4 +190,17 @@ div.col-1-10 p {
 /* Map Styles */
 iframe {
     width: 100%;
+}
+
+label#navButton {
+    margin: 0 0 0 20px;
+    font-size: 25px;
+    line-height: 50px;
+    display: none;
+    color: white;
+    float: left;
+}
+
+input#toggle {
+    display: none;
 }
