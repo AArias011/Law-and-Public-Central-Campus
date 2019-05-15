@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+/* Media queries */
+@media only screen and (max-width: 550px) {
+    label#navButton {
+        display: block;
+        cursor: pointer;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width:100%;
+    
+    }
+
+    div.col-4-10 {
+        width: 100%;
+    }
+
+    div.col-6-10 {
+        width: 100%;
+    }
+
+    div.col-7-10{
+        width: 100%;
+    }
+    div.col-3-10{
+        width: 100%;
+    }
+
+    #ctsoH1{
+        margin-left: 45px;
+    }
+
+    div.col-1-2{
+        width: 100%;
+    }
+    div#contactInformation{
+        text-align: center;
+    }
+
+    #nav li {
+        list-style-type: none;
+        display: block;
+        width: 20%;
+        float: right;
+        text-decoration: none;
+        text-align: center;
+        padding: 25px 20px 20px 20px;
+    }
+
+    nav {
+        text-align: center;
+        display: none;
+    }
+
+    nav ul li {
+
+        display: block;
+        margin: 0;
+    }
+
+    li {
+        color: white;
+    }
+
+    input#toggle:checked+nav {
+        display: block;
+    }
+
+
+    .nav {
+        width: 100%;
+    }
+
+
+    #indexH1 {
+        font-size: 30px;
+    }
+
+    #aboutH1 {
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    #aboutH2 {
+        line-height: 25px;
+    }
+
+    #homeImage {
+        margin: 0 35px;
+        display: block;
+        padding-left: 20px;
+        width: 50%;
+    }
+
+    #formHeader {
+        line-height: 45px;
+    }
+
+    #contactH1 {
+        line-height: 45px;
+    }
+
+    #submit {
+        margin-left: 10px;
+    }
+
+
+
+    #centralImage {
+        display: none;
+    }
+
+    div.col-5-10 {
+        display: none;
+    }
+
+    div.col-1-10 {
+        width: 25%;
+        margin-bottom: 8.5%;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    div.col-5-10 {
+        display: none;
+    }
+
+    div.col-1-10 {
+        margin-left: 5%;
+        margin-top: 0%;
+    }
+
+
+    nav {
+        text-align: center;
+        display: none;
+    }
+
+    label#navButton {
+        display: block;
+        cursor: pointer;
+        float: right;
+        width: 15%;
+        font-size: 40px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width:100%;
+    
+    }
+    #nav li {
+        list-style-type: none;
+        display: block;
+        width: 20%;
+        float: right;
+        text-decoration: none;
+        text-align: center;
+        padding: 25px 20px 20px 20px;
+    }
+    input#toggle:checked+nav {
+        display: block;
+    }
+    #homeImage{
+        width: 50%;
+    }
+    div.col-4-10 {
+        width: 100%;
+    }
+    div.col-6-10 {
+        width: 100%;
+    }
+    #aboutH1{
+        line-height: 35px;
+    }
+    div.col-3-10{
+        width: 100%;
+    }
+    div.col-7-10{
+        width: 100%;
+    }
+    div.col-4-10{
+        width: 50%;
+    }
+    #contactH1{
+        line-height: 50px;
+    }
+   div#contactForm{
+       padding-top: 40px;
+   }
+   button#submite{
+        margin-right: 10px;
+   }
+}
+
