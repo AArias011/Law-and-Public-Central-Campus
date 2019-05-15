@@ -48,6 +48,7 @@ div#slideShow {
 }
 
 div.col-4-10 img.slideShowImages {
+    padding-top: 50px;
     display: none;
     width: 100%;
     margin-left: 0%;
