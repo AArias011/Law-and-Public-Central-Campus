@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/* Grid Styles */
+div.row {
+    clear: both;
+    background-color: #f7941d;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div[class^="col-"] {
+    float: left;
+
+}
+
+div.col-6-10 {
+    width: 60%;
+    background-color: white;
+}
+
+div#centralImage {
+    width: 40%;
+
+}
+
+
+/* Page Text Styles */
+
+article {
+    padding: 30px;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+h1 {
+    position: relative;
+    font-size: 2em;
+    text-decoration: underline #f7941d;
+    padding: 30px 0px 3px 30px;
+    ;
+}
+
+/* Slide Show Styles */
+div#slideShow {
+    height: 100%;
+    width: 100%;
+
+}
+
+div.col-4-10 img.slideShowImages {
+    display: none;
+    width: 100%;
+    margin-left: 0%;
+    position: relative;
+    vertical-align: center;
+    height: 400px;
+    margin-top: 40px;
+}
