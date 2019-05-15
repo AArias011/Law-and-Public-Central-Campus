@@ -12,7 +12,8 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        width: 100%;
+        width:108%;
+    
     }
 
     div.col-4-10 {
@@ -23,10 +24,22 @@
         width: 100%;
     }
 
-    .slideShowImages {
+    div.col-7-10{
         width: 100%;
-        display: none;
+    }
+    div.col-3-10{
+        width: 100%;
+    }
 
+    #ctsoH1{
+        margin-left: 45px;
+    }
+
+    div.col-1-2{
+        width: 100%;
+    }
+    div#contactInformation{
+        text-align: center;
     }
 
     #nav li {
@@ -123,12 +136,6 @@
         margin-top: 0%;
     }
 
-    div.col-4-10 {
-        width: 30%;
-        margin-left: 10%;
-        margin-top: 3%;
-        margin-bottom: 1%;
-    }
 
     nav {
         width: 90%;
