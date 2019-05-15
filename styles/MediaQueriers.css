@@ -12,7 +12,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        width:108%;
+        width:100%;
     
     }
 
@@ -94,7 +94,7 @@
         margin: 0 35px;
         display: block;
         padding-left: 20px;
-        width: 60%;
+        width: 50%;
     }
 
     #formHeader {
@@ -138,14 +138,67 @@
 
 
     nav {
-        width: 90%;
-    }
-
-
-}
-
-@media screen and (min-width: 550px) {
-    #nav-toggle {
+        text-align: center;
         display: none;
     }
+
+    label#navButton {
+        display: block;
+        cursor: pointer;
+        float: right;
+        width: 15%;
+        font-size: 40px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width:100%;
+    
+    }
+    #nav li {
+        list-style-type: none;
+        display: block;
+        width: 20%;
+        float: right;
+        text-decoration: none;
+        text-align: center;
+        padding: 25px 20px 20px 20px;
+    }
+    input#toggle:checked+nav {
+        display: block;
+    }
+    #homeImage{
+        width: 50%;
+    }
+    div.col-4-10 {
+        width: 100%;
+    }
+    div.col-6-10 {
+        width: 100%;
+    }
+    #aboutH1{
+        line-height: 35px;
+    }
+    div.col-3-10{
+        width: 100%;
+    }
+    div.col-7-10{
+        width: 100%;
+    }
+    div.col-4-10{
+        width: 50%;
+    }
+    #contactH1{
+        line-height: 50px;
+    }
+   div#contactForm{
+       padding-top: 40px;
+   }
+   button#submite{
+        margin-right: 10px;
+   }
 }
+
