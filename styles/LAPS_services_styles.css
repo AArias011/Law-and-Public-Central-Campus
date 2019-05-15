@@ -9,3 +9,34 @@ article {
     text-decoration: underline #f7941d;
     padding: 30px 0px 0px 30px;
 }
+
+img#teenCourtImage{
+    width: 100%;
+    padding-top: 35px;
+}
+
+
+/* Grid Styles */
+div.row {
+    clear: both;
+    background-color: #f7941d;
+}
+
+div.row::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+div[class^="col-"] {
+    float: left;
+}
+
+div.col-7-10 {
+    width: 70%;
+    background-color: white;
+}
+
+div.col-3-10 {
+    width: 30%;
+}
