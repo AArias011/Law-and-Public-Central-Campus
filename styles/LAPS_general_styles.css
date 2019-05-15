@@ -25,15 +25,20 @@ li {
     padding: 25px 20px 20px 20px;
 }
 
-nav img {
-    padding: 10px 0px 10px 20px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
 }
+
+
 
 #nav a {
     position: relative;
     color: white;
     font-size: 3vh;
-
 }
 
 #nav a::before {
@@ -76,6 +81,13 @@ nav img {
 img#banner {
     width: 100%;
     position: relative;
+}
+
+#homeImage {
+    float: left;
+    width: 20%;
+    margin: 5px 40px;
+
 }
 
 /* Footer Styles */
@@ -152,10 +164,11 @@ div.col-4-10 {
 
 div.col-4-10 p {
     color: white;
+
 }
 
 div.col-4-10 img {
-    width: 40%;
+    width: 50%;
     margin-left: 20%;
 }
 
@@ -177,4 +190,17 @@ div.col-1-10 p {
 /* Map Styles */
 iframe {
     width: 100%;
+}
+
+label#navButton {
+    margin: 0 0 0 20px;
+    font-size: 25px;
+    line-height: 50px;
+    display: none;
+    color: white;
+    float: left;
+}
+
+input#toggle {
+    display: none;
 }

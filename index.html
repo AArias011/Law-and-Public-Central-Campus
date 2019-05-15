@@ -1,117 +1,109 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
-    <link rel="stylesheet" src="CSS" href="reset_styles.css">
-    <link rel="stylesheet" src="CSS" href="LAPS_general_styles.css">
-    <link rel="stylesheet" src="CSS" href="LAPS_index_styles.css">
+    <link rel="stylesheet" src="CSS" href="styles/reset_styles.css">
+    <link rel="stylesheet" src="CSS" href="styles/LAPS_general_styles.css">
+    <link rel="stylesheet" src="CSS" href="styles/LAPS_index_styles.css">
+    <link rel="stylesheet" src="CSS" href="styles/MediaQueriers.css">
     <link rel="icon" href="Images/west_mec_arrow_orange_gEn_icon.ico">
-    <link rel="stylesheet" href="MediaQueriers.css" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <header>
+    <div id="nav">
+        <header>
+            <img id="homeImage" src="Images/west-mec-logo.png" alt="west-mec-logo">
 
-        <a id="nav-toggle" href="#">&#9776;</a>
+            <label for="toggle" id="navButton">&#9776</label>
+            <input type="checkbox" id="toggle">
 
-        <div id="nav">
+
             <nav class="horizontal">
+
                 <ul>
-
-                    <img id="homeImage" src="Images/west-mec-logo.png" alt="west-mec-logo">
-
-
                     <li><a class="nav" href="LAPS_contact.html">Contact</a></li>
                     <li><a class="nav" href="LAPS_services.html">Services</a></li>
                     <li><a class="nav" href="LAPS_ctso.html">CTSO</a></li>
                     <li><a class="nav" href="LAPS_about.html">About</a></li>
                     <li><a class="nav" href="index.html">Home</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="container">
+                <img src="Images/bannerImageIndex.png" alt="indexBanner" style="width:100%;">
+            </div>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-6-10">
+            <h1>About West-MEC</h1>
+            <article>
+                West-Mec is a public school district in which student can recieve career technical training which aims
+                at
+                preparing them to enter the workforce. Through hands-on experience, leadership training, inclass
+                direction, and
+                mentorship, west-mec programs provides students with the experience they need to work in a specialized
+                career.
+                While in the program, students are given the knowledge they need in order to pass a variety of industry
+                certifications or licensure in a field of their choice, providing a pathway to success and career for
+                their
+                future.
+            </article>
+            <h1 id="indexH1">Law and public Safety</h1>
+            <article>
+                One of the programs offered by West-MEC is Law and Public Safety, a two-year program which explores the
+                basic
+                skills used in patrol functions, defensive tactics, and the use of force. From learning first aid to
+                one’s
+                constitutional rights, the programs helps student in preparing for a future career in law enforcement.
+                At the conclusion of the program, students are given the opportunity to demonstrate their knowledge on
+                law enforcement by attempting a variety of industry certification examinations/ Further information
+                about the program, pricing, dress code, and certifications can be located in the <a
+                    href="LAPS_about.html">About</a> page.
+            </article>
         </div>
-
-        </ul>
-        </nav>
-
-
-        <div class="container">
-            <img src="Images/bannerImageIndex.png" alt="indexBanner" style="width:100%;">
+        <div class="col-4-10">
+            <div id="slideShow">
+                <img class="slideShowImages" src="Images/IMG_0431.JPG" alt="">
+                <img class="slideShowImages" src="Images/IMG_4791(1).JPG" alt="">
+                <img class="slideShowImages" src="Images/IMG_4795.JPG" alt="">
+                <img class="slideShowImages" src="Images/IMG_6556.JPG" alt="">
+                <img class="slideShowImages" src="Images/IMG_7121.JPG" alt="">
+            </div>
         </div>
-
-    </header>
-
-
-    <h1>About West-MEC</h1>
-    <article>
-        West-Mec is a public school district in which student can recieve career technical training which aims at
-        preparing them to enter the workforce. Through hands-on experience, leadership training, inclass direction, and
-        mentorship, west-mec programs provides students with the experience they need to work in a specialized career.
-        While in the program, students are given the knowledge they need in order to pass a variety of industry
-        certifications or licensure in a field of their choice, providing a pathway to success and career for their
-        future. One of their programs; Law, Public Safety & Security is a two-year program which explores the basic
-        skills used in patrol functions, defensive tactics, use of force and first aid. From learning first aid to one’s
-        constitutional rights, the programs helps student in preparing for a future career in law enforcement.
-
-
-        West-MEC programs prepare students to seek many industry certifications or licensure in a field of their choice,
-        providing a pathway to success and career for their future. One of their programs; Law, Public Safety & Security
-        is a two-year program which explores the basic skills used in patrol functions, defensive tactics, use of force
-        and first aid.
-    </article>
-    <h1>Law and public Safety</h1>
-    <article>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aspernatur possimus delectus, rerum dolorum
-        doloremque. Perferendis quidem, sapiente officia nostrum incidunt iure, corrupti repellat aperiam sit impedit
-        corporis architecto eveniet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis velit sunt omnis
-        deserunt accusantium sequi consequatur odio assumenda laborum nostrum harum, cupiditate quam, voluptates
-        expedita ad, reprehenderit cumque ab distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Soluta amet deleniti explicabo temporibus quas dolor sapiente quidem veniam veritatis iste, dignissimos nihil
-        earum necessitatibus, eum nisi quam, saepe quo ratione? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Est aliquid blanditiis rem sequi dignissimos illo voluptatum totam fugiat, temporibus tempora eveniet eum enim?
-        Perferendis explicabo distinctio dolorem labore iure laboriosam!
-    </article>
-
-
+    </div>
     <footer>
-
-        <div class="row">
-
-            <div class="col-4-10">
-                <img id="footerLogo" src="Images/Central_white with orange arrows.png" alt="CentralCampus">
-            </div>
-
-            <div class="col-5-10">
-                <img src="Images/20. Law, Public Safety & Security 2.png" id="footerBanner">
-            </div>
-
-            <div class="col-1-10">
-                <p>
-                    <a href="https://www.youtube.com/user/CareerDrivenED" class="fa fa-youtube" id="LPS"></a>
-                </p>
-            </div>
-
-            <div class="col-1-10">
-                <p>
-                    <a href="https://instagram.com/westmeclawclass?utm_source=ig_profile_share&igshid=l5hxcca0646f"
-                        class="fa fa-instagram" id="LPS"></a>
-                </p>
-            </div>
-
-            <div class="col-1-10">
-                <p>
-                    <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
-                        class="fa fa-google" id="LPS"></a>
-                </p>
-            </div>
+        <div class="col-4-10" id="centralImage">
+            <img src="Images/Central_white with orange arrows.png" alt="">
         </div>
-        <nav>
-
+        <div class="col-5-10">
+            <img src="Images/20. Law, Public Safety & Security 2.png" id="footerBanner">
+        </div>
+        <div class="col-1-10">
+            <p>
+                <a href="https://www.youtube.com/user/CareerDrivenED" class="fa fa-youtube" id="LPS"></a>
+            </p>
+        </div>
+        <div class="col-1-10">
+            <p>
+                <a href="https://instagram.com/westmeclawclass?utm_source=ig_profile_share&igshid=l5hxcca0646f"
+                    class="fa fa-instagram" id="LPS"></a>
+            </p>
+        </div>
+        <div class="col-1-10">
+            <p>
+                <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%3Ftab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+                    class="fa fa-google" id="LPS"></a>
+            </p>
+        </div>
     </footer>
 </body>
+<script src="LAPS_javascript.js"></script>
 
 </html>
