@@ -12,33 +12,36 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        width:100%;
-    
+        width: 100%;
+
     }
 
     div.col-4-10 {
         width: 100%;
+        padding-top: 0px;
     }
 
     div.col-6-10 {
         width: 100%;
     }
 
-    div.col-7-10{
-        width: 100%;
-    }
-    div.col-3-10{
+    div.col-7-10 {
         width: 100%;
     }
 
-    #ctsoH1{
+    div.col-3-10 {
+        width: 100%;
+    }
+
+    #ctsoH1 {
         margin-left: 45px;
     }
 
-    div.col-1-2{
+    div.col-1-2 {
         width: 100%;
     }
-    div#contactInformation{
+
+    div#contactInformation {
         text-align: center;
     }
 
@@ -157,9 +160,10 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
-        width:100%;
-    
+        width: 100%;
+
     }
+
     #nav li {
         list-style-type: none;
         display: block;
@@ -169,38 +173,48 @@
         text-align: center;
         padding: 25px 20px 20px 20px;
     }
+
     input#toggle:checked+nav {
         display: block;
-     }
-    #homeImage{
+    }
+
+    #homeImage {
         width: 50%;
     }
+
     div.col-4-10 {
-        width: 100%;
+        /* width: 100%; */
     }
+
     div.col-6-10 {
         width: 100%;
     }
-    #aboutH1{
+
+    #aboutH1 {
         line-height: 35px;
     }
-    div.col-3-10{
+
+    div.col-3-10 {
         width: 100%;
     }
-    div.col-7-10{
+
+    div.col-7-10 {
         width: 100%;
     }
-    div.col-4-10{
-        width: 50%;
+
+    div.col-4-10 {
+        /* width: 50%; */
     }
-    #contactH1{
+
+    #contactH1 {
         line-height: 50px;
     }
-   div#contactForm{
-       padding-top: 40px;
-   }
-   button#submite{
-        margin-right: 10px;
-   }
-}
 
+    div#contactForm {
+        padding-top: 40px;
+    }
+
+    button#submite {
+        margin-right: 10px;
+    }
+}
