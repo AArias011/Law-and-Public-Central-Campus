@@ -1,16 +1,20 @@
 @charset "UTF-8";
+/* Styles on this file will only be applied to the website's Contact page. */
 
 /* Contact Information Styles */
+/* The code block below makes the bakground color of the contact information section of the page white, making it stand out from the other section of the page which is grey. The padding added to the bottom of the element allows for the text inside of the element to have more space seperating it from other sections of the page */
 div#contactInformation {
     background-color: white;
     padding-bottom: 20px;
 
 }
 
+/* The code block below adds padding to the left of the contact aside in order to allow for more room between each of the elements as well as the text inside of those elements.  */
 aside#contactAside {
     padding-left: 25px;
 }
 
+/* The code block below styles the H1 element within the aside element. These styles ake the element text bigger in comparison to the rest of the text on the screen and an underline to make it stand out more. It is also given padding which provides spacing between the text and the container's top. */
 aside#contactAside h1 {
     font-size: 3em;
     padding: 30px 0px;
@@ -18,7 +22,7 @@ aside#contactAside h1 {
 }
 
 /* Contact Form Styles */
-
+/* The code block below states that the h1 element will be aligned in the center of its container. The rest of the styles are the same ones that can be found in the previous h1 and serve the same purpose. */
 div#contactForm h1 {
     text-align: center;
     font-size: 3em;
@@ -26,19 +30,14 @@ div#contactForm h1 {
     text-decoration: underline #f7941d;
 }
 
-/* This code affects the form and give it a box sizing, display, margin-top, position, left, bottom and height. */
-
+/* The code block below affects the entire form element which contains each of the undividual inputs. The form is stripped of any margin that it may automatically be given and is given a marging on the left which allows for it to appeared centered in its container.  */
 form {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-
     margin-top: 0em;
     position: relative;
     margin-left: 32.5%;
-
-
 }
 
+/* The code block below styles each of the inputs along with the textarea box which appear in the form. The styles written make each part fo the form appear as only a line as opposed to an entire box. Along with that, it makes the each of the input only takes up about 51.6% of its container as opposed to the smaller size that id takes by default.  */
 .formStyles {
     width: 51.6%;
     position: relative;
@@ -49,6 +48,7 @@ form {
 
 }
 
+/* The code block below styles the way the button element looks when displayed on the page. It removes the border from the default button styles and rounds the corners of it. Along with that it changes the color of the button itself in order for it to fit the styles of the page better. */
 button {
     background-color: white;
     margin-left: 15%;
@@ -61,28 +61,31 @@ button {
 }
 
 /* Map Styles */
+/* The style listed below makes sure that the map seen on the contact page takes up the entire width of the browser window.  */
 #maps {
     width: 100%;
-
 }
 
 /* Page Grid Styles */
+/* The code block below changes the background color of the row to the color specified while also clearing any floated element already within the container.  */
 div.row {
     clear: both;
     background-color: rgb(226, 226, 226)
 }
 
+/* The code block below deals with container collapse and makes sure that all content remains within its container  */
 div.row::after {
     clear: both;
     content: "";
     display: table;
 }
 
+/* The code block below states that any divs with a class beginning with col- will be floated to the left of the browser, allowing for element to appear side by side of one another */
 div[class^="col-"] {
     float: left;
 
 }
-
+/* The code blcok below sets the width of any div with a class of col-1-2 to 50% of the screen width. With two of these elements, 100% of the screen with will be filled with content. */
 div.col-1-2 {
     width: 50%;
 }

@@ -1,8 +1,14 @@
+@charset "UTF-8";
+/* Styles on this file will only be applied to the website's Services page. */
+
+/* The code block below adds 30px of padding around the entire article element, allowing for the element to have space between its own edges and those of its container. The font size property makes the font bigger and more readable for the user. The line height property also makes the text easier to read by making sure that each text line is not so close to one another. */
 article {
     padding: 30px;
     font-size: 20px;
     line-height: 23px;
 }
+
+/* The code block below makes each h1 element on the index page large, making it stand out among the rest of the text in order to act as titles for each section of the page. Padding is added around these elements so that they are not too close to the sides of their containers.  */
  h1 {
     position: relative;
     font-size: 3em;
@@ -10,6 +16,7 @@ article {
     padding: 30px 0px 0px 30px;
 }
 
+/* The code block below is states that the width of the image with the id of teenCourtImage will take up 100% of its container. The padding added to the top of the element helps in allogning the element horizontally in the center of its container.  */
 img#teenCourtImage{
     width: 100%;
     padding-top: 35px;
@@ -17,26 +24,31 @@ img#teenCourtImage{
 
 
 /* Grid Styles */
+/* The code block below changes the background color of the row element to the color specified. Along with that, any floated elements around it will be cleared. */
 div.row {
     clear: both;
     background-color: #f7941d;
 }
 
+/* The code block below deals with any container collapse that may occur in the element, making sure that all the elements nested within stay in the container. */
 div.row::after {
     clear: both;
     content: "";
     display: table;
 }
 
+/* The code block below states that any div element with a class beginning with col- will be floated to the left of the screen. This allows for two elements to be placed side by side of one another.  */
 div[class^="col-"] {
     float: left;
 }
 
+/* The style below states that the div element with a class of col-7-10 will take up 70% of the browsers width. It also specifies a new background color for the element, overwritting the one set before for the row */
 div.col-7-10 {
     width: 70%;
     background-color: white;
 }
 
+/* The style below states that the div element with a class of col-3-10 will take up 30% of the browsers width. */
 div.col-3-10 {
     width: 30%;
 }

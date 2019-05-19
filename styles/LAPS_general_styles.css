@@ -1,20 +1,25 @@
 @charset "UTF-8";
+/* Styles on this file will affect all pages of the website. */
 
 /* Body Styles */
+/* The style below sets the font of all the text that appears on the page to Franklin Gothic Medium. The rest of the fonts listed serve as backups incase the browser does not support the first font. */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Header Styles */
+/* The style below sets the background color of each page header to black with opacity applied, making the color not seem as dark as it typically would be. */
 header {
     background-color: rgba(0, 0, 0, 0.925);
 }
 
 /* Nav styles */
+/* The style below allows for each of the links to be placed next tio one another in a straight line rather than having them on top of one another. */
 li {
     display: inline;
 }
 
+/* The code block below styles each one of the li elements in which the navigation links are placed into. The styles remove any bulleting that the list may have while also aligning each in the center of their container and limiting them to a width of 15% of the header. The padding allows for spaing inbetween the elements and anything else surrounding them. */
 #nav li {
     list-style-type: none;
     display: block;
@@ -25,22 +30,22 @@ li {
     padding: 25px 20px 20px 20px;
 }
 
+/* The code block below styles the ul element which contains each all of the navigation links. It allows for them to all be placed on a single row next to one another without having them push each other to the next line. */
 ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 
 }
 
-
-
+/* The code block below styles the links themselves, making the color of the text white while also increasing its size. */
 #nav a {
     position: relative;
     color: white;
     font-size: 3vh;
 }
 
+/* The code block below creates an orange line at the top of the links. This line is not visible until the user scrolls over top of the link. When hovered over, the line will appear in a small animation in which it's width grows from 0% to 100% in 0.3 seconds. */
 #nav a::before {
     content: "";
     position: absolute;
@@ -53,6 +58,7 @@ ul {
     transition: 0.3s ease-in-out;
 }
 
+/* The comment from above applies here as well, though this line is located at the bottom of the link. The same animation is ran upon hovering over the link. */
 #nav a::after {
     content: "";
     position: absolute;
@@ -66,23 +72,20 @@ ul {
     transition: all 0.3s ease-in-out 0s;
 }
 
-#nav a:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-
-}
-
-#nav a:hover::after {
+/* The code block below causes the lines created before to become visible upon the user hovering over one of the navigation links in the header. */
+#nav a:hover::before, #nav a:hover::after {
     visibility: visible;
     transform: scaleX(1);
 }
 
 /* Image styles */
+/* The code block below styles the banner image located under the header of each page and makes sure that it takes up 100% of the pages width. Having a relative position also allows for the image to adjust as the screen size adjusts. */
 img#banner {
     width: 100%;
     position: relative;
 }
 
+/* The code block below styles the top left image of the header section on the page. The image will take up 20% of the headers width and margin is added around the image in order for it not not be too close to the edges of the header element. */
 #homeImage {
     float: left;
     width: 20%;
@@ -90,43 +93,67 @@ img#banner {
 
 }
 
+/* The code block below creates the navicon that will appear when the webpage is viewed on a smaller viewport such as that of a mobile device of tablet. When viewed on a computer screen, the navicon will not be displayed on the page. */
+#navButton {
+    margin: 0 0 0 20px;
+    font-size: 25px;
+    line-height: 50px;
+    display: none;
+    color: white;
+    float: left;
+}
+
+/* The code block below states that the checkbox input located within the header of the page which allows the navicon to function will not be visible on the screen unless otherwise stated. */
+input#toggle {
+    display: none;
+}
+/* Other Links */
+/* The code block below changes the color of each of the links on the page to orange while also removing the underline that is automatically placed under every link on a page. */
+.oLinks{
+    color: #f7941d;
+    text-decoration: none;
+}
+
+/* The  style below causes links on the page to become italic once the user hovers over them. */
+.oLinks:hover{
+    font-style: italic;
+}
+
 /* Footer Styles */
+/* The code block below sets the background color of the footer to the same color as that of the header. Along with that, padding is added arround the footer in order for its content to not seem to close to the rest of the sections on the page. */
 footer {
     background-color: rgba(0, 0, 0, 0.925);
     padding: 8px;
-    color: rgba(21, 17, 17, .6);
 }
 
-footer a {
-    display: block;
-    width: 100%;
-    float: left;
-    text-align: center;
-}
-
+/* The code block below makes every p element within the footer float to the rigth side. On the page this is what brings all the social media links to the right side of the screen */
 footer p {
     display: block;
     float: right;
 }
 
+/* The code block below is meant to deal with any container collapse that may occur when creating the footer. It makes sure that every element stays within the appropriate container. */
 footer:after {
     content: "";
     clear: both;
     display: table;
 }
 
+/* The code block below colors the logos within each of the social media links the color black when not being hovered over by the user. */
 footer p a:link,
 footer p a:visited {
     text-decoration: none;
     color: black;
 }
 
+/* The code block below colors the logos within each of the social media links the color white while they are being hovered over by the user. */
 footer p a:active,
 footer p a:hover {
     text-decoration: underline;
     color: white;
 }
 
+/* The code block below allows for the footer banner image to take up about 59% of its container. Pading is also added ot the left and to the top of the element in order to not have it appear to close to the edges of its container. */
 #footerBanner {
     width: 59%;
     padding-left: 10%;
@@ -134,48 +161,52 @@ footer p a:hover {
 }
 
 /* Footer Grid Styles */
+/* The style below clears any floating items from either side of the element. */
 div.row {
     clear: both;
 }
 
+/* The code block below deals with any container collapse that may occur in the element, making sure that all the elements nested within stay in the container. */
 div.row::after {
     clear: both;
     content: "";
     display: table;
 }
 
+/* The code block below states that any div element that has a class that begins with col- will be floated to the left of the screen. This allows for two elements to be placed side by side of one another without any conflicts in spacing.  */
 div[class^="col-"] {
     float: left;
 
 }
 
+/* The style below states that the div element with a class of col-1-10 will take up 10% of the browsers width. */
 div.col-1-10 {
 
     width: 10%;
 }
 
+/* The style below states that the div element with a class of col-2-10 will take up 20% of the browsers width. */
 div.col-2-10 {
     width: 30%;
 }
 
+/* The style below states that the div element with a class of col-4-10 will take up 40% of the browsers width. */
 div.col-4-10 {
     width: 40%;
 }
 
-div.col-4-10 p {
-    color: white;
-
-}
-
+/* The code block below states that the image within the div.col-4-10 element will only take up 50% of its container. Along with that, a margin is added to the left of the element to add space inbetween it and the sides of it's container. */
 div.col-4-10 img {
     width: 50%;
     margin-left: 20%;
 }
 
+/* The code block below adds padding to the rigth of the div.col-1-10 element, allowing for it to not be as close to the edge of its container as it is without any padding. */
 div.col-1-10 p {
     padding-right: 20%;
 }
 
+/* The code block below styles each one of the social media icons locates in the page's footer including the color of each icon, the circular shape of each icon, and the size of each one.  */
 #LPS {
     background-color: #f7941d;
     padding: 16px;
@@ -185,22 +216,4 @@ div.col-1-10 p {
     text-decoration: none;
     border-radius: 100%;
     margin-top: 10px;
-}
-
-/* Map Styles */
-iframe {
-    width: 100%;
-}
-
-label#navButton {
-    margin: 0 0 0 20px;
-    font-size: 25px;
-    line-height: 50px;
-    display: none;
-    color: white;
-    float: left;
-}
-
-input#toggle {
-    display: none;
 }

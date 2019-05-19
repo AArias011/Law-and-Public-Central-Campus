@@ -1,39 +1,41 @@
 @charset "UTF-8";
+/* Styles on this file will only be applied to the website's Index page. */
 
 /* Grid Styles */
+/* The code block below changes the background color of the row element to the color specified while also saying that any floated elements around it will be cleared, thus making the the element take up the entire width of the screen. */
 div.row {
     clear: both;
     background-color: #f7941d;
 }
-
-
-
+ 
+/* The code block below deals with any container collapse that may occur in the element, making sure that all the elements nested within stay in the container. */
 div.row::after {
     clear: both;
     content: "";
     display: table;
 }
 
+/* The code block below states that any div element with a class beginning with col- will be floated to the left of the screen. This allows for two elements to be placed side by side of one another without any conflicts..  */
 div[class^="col-"] {
     float: left;
 }
 
+/* The style below states that the div element with a class of col-6-10 will take up 60% of the browsers width. Along with that, the background color of this element will be white, overwriting the background color specified before. */
 div.col-6-10 {
     width: 60%;
     background-color: white;
 }
 
-div#centralImage {
-    width: 40%;
-}
 
 /* Page Text Styles */
+/* The code block below adds 30px of padding around the entire article element, allowing for the element to have space between its own edges and those of its container. The font size property makes the font bigger and more readable for the user. The line height property also makes the text easier to read by making sure that each text line is not so close to one another. */
 article {
     padding: 30px;
     font-size: 20px;
     line-height: 23px;
 }
 
+/* The code block below makes each h1 element on the index page large, making it stand out among the rest of the text in order to act as titles for each section of the page. Padding is added around these elements to not have them be too close to the sides of their containers.  */
 h1 {
     position: relative;
     font-size: 2em;
@@ -43,15 +45,14 @@ h1 {
 }
 
 /* Slide Show Styles */
+/* The style below allows for the slide show images to take up the entire with of their container. */
 div#slideShow {
     width: 100%;
 }
 
+/* The code block below styles the slide show which appears to the right of the text on the page. Padding is added to the top of the element in order to center it horizontally. Each image takes up the entire with of its container and any margin to the left of the element is removed so that it touched the left and right sides of the container. */
 div.col-4-10 img.slideShowImages {
     padding-top: 50px;
-    display: none;
     width: 100%;
     margin-left: 0%;
-    position: relative;
-    vertical-align: center;
 }

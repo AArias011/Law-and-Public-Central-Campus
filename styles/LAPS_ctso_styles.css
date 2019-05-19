@@ -1,14 +1,21 @@
+@charset "UTF-8";
+/* Styles on this file will only be applied to the website's CTSO page. */
+
 /* Page Text Styles */
+
+/* The code block below adds padding around the article element, allowing for more spacing in between the element and its container. Along wit that, the size and spacing in between each line of text which allow for the text to be easier to read by the user.  */
 article {
     padding: 30px;
     font-size: 20px;
     line-height: 23px;
 }
 
+/* The style below aligns the unordered list element within the center of its container */
 ul#mainList {
     text-align: center;
 }
 
+/* The code block below allow for the h1 element text to stand out among the rest of the text on each page. This also informs the reader of the infromation that is contained in the element. */
 article h1 {
     position: relative;
     font-size: 2em;
@@ -16,6 +23,7 @@ article h1 {
     padding: 30px 0px;
 }
 
+/* The cole blok below allows for the h1 element text nested within the aside element to stand out from the rest of the text written.  */
 aside h1 {
     text-align: center;
     font-size: 2em;
@@ -24,33 +32,38 @@ aside h1 {
     color: white;
 }
 
+/* The style below states that each list item with the class of heading will be colored white. this allows for heading to be differentiated when on the page with the rest of the text. */
 aside ul li.heading {
     color: white;
 }
 
 /* Grid Styles */
+/* The following code blocks create the page's layout. */
 div.row {
     clear: both;
     background-color: #f7941d;
 }
 
+/* The code block below deals with any container collapse that may occur in the element, making sure that all the elements nested within stay in the container. */
 div.row::after {
     clear: both;
     content: "";
     display: table;
 }
 
+/* The code block makes sure that any div element that has a class that begins with col is floated to the left of the screen. This allows for two elements to be placed side by side of one another.  */
 div[class^="col-"] {
     float: left;
 
 }
 
+/* The code block below states that the div element with a class of col-7-10 will take up 70% of the browsers window. Along with that, the color of the div will be white and thus overwrites the previous orange color set for the row div.*/
 div.col-7-10 {
     width: 70%;
     background-color: white;
 }
 
+/* The code block below states that the content in the div element with a class of col-3-10 will take up 30% of the browsers width.*/
 div.col-3-10 {
     width: 30%;
-
 }

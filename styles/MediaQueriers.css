@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
 /* Media queries */
+
+/* The following code creates a page layout for any devices at or under a pixel width of 550. */
 @media only screen and (max-width: 550px) {
+    /* The code block below makes the navicon visible on the screen afetr having previously not being visile when the page was being viewed on a computer screen or any larger screens. */
     label#navButton {
         display: block;
         cursor: pointer;
     }
 
+    /* The code blcok below removes any padding that was previously applies to the ul element and gives it a width of 100% of its container, thus stretching the width of the browser window. */
     ul {
         list-style-type: none;
         margin: 0;
@@ -16,6 +20,7 @@
 
     }
 
+    /* The following code blocks set the width of each div with the specified class to 100%. This allows for each section of the page to appear on top of one another, making the pages easier to navigate when on a mobile device that has a smaller screen. */
     div.col-4-10 {
         width: 100%;
         padding-top: 0px;
@@ -33,18 +38,22 @@
         width: 100%;
     }
 
-    #ctsoH1 {
-        margin-left: 45px;
-    }
 
     div.col-1-2 {
         width: 100%;
     }
 
+    /* The style below adds a margin of 45px to the left of the element with an id of ctsoH1. */
+    #ctsoH1 {
+        margin-left: 45px;
+    }
+
+    /* The style below aligns the text of the div with an id of contactInformation in the center of its container. */
     div#contactInformation {
         text-align: center;
     }
 
+    /* The code block below sets the how the navigation list items will appear on the page, having each one of the take up 20% of the header and being floated to the right of their container. */
     #nav li {
         list-style-type: none;
         display: block;
@@ -55,31 +64,12 @@
         padding: 25px 20px 20px 20px;
     }
 
-    nav {
-        text-align: center;
-        display: none;
-    }
-
-    nav ul li {
-
-        display: block;
-        margin: 0;
-    }
-
-    li {
-        color: white;
-    }
-
+    /* The code block below serves to display the navigation bar upon the user clicking on the navicon when on a mobile device. */
     input#toggle:checked+nav {
         display: block;
     }
 
-
-    .nav {
-        width: 100%;
-    }
-
-
+    /* The following code blocks changes either the line height of the element or the font size of the element. The change in font size allows the text to stand out among the rest of the text. The change in line height prevents lines of text from overlapping one another when on mobile. */
     #indexH1 {
         font-size: 30px;
     }
@@ -93,6 +83,7 @@
         line-height: 25px;
     }
 
+    /* The code block below styles the west mec logo seen at the top of the screen when on mobile. The padding and mergin added to it are placed there so the element is not too close to the edges of its container. */
     #homeImage {
         margin: 0 35px;
         display: block;
@@ -102,28 +93,27 @@
         margin-bottom: 3px;
     }
 
-    #formHeader {
+    /* The style below adds spacing in between the lines of these elemenst in order for them to not overlap when the browser screen is collapsed by the user or the page is displayed on mobile */
+    #formHeader, #contactH1 {
         line-height: 45px;
     }
 
-    #contactH1 {
-        line-height: 45px;
+    /* The style below removes any padding around the image element with an id of teenCourtImage that may have been previously placed there. */
+    img#teenCourtImage{
+        padding: 0px;
     }
 
-    #submit {
-        margin-left: 10px;
-    }
-
-
-
+    /* The style below removes the image with an id of centralImage from the footer of the page. This allows for the footer to not be cluttered by t0o much content when displayed on a mobile device. */
     #centralImage {
         display: none;
     }
 
+    /* The style below removes the div.col-5-10 element from the page when displayed on mobile. This element is located in the page footer and contains the law and public safety image. Removing it allows for the footer to not be cluttered with too many elements when displayed on mobile. */
     div.col-5-10 {
         display: none;
     }
 
+    /* The code block below styles footer social media icons which are located inside of the div with the class of col-1-10. This provides spacing between them as well as between the edges of the footer. */
     div.col-1-10 {
         width: 25%;
         margin-bottom: 8.5%;
@@ -131,22 +121,26 @@
     }
 }
 
+/* The following code creates a page layout for any devices at or under a pixel width of 1160. */
 @media screen and (max-width: 1160px) {
+    /* The style below states that the element specified will not be visible on the screen when the user is viewing the website on a device of this particular size. */
     div.col-5-10 {
         display: none;
     }
 
+    /* The code block below styles the footer social media icons which are located inside of the div with the class of col-1-10. This provides spacing between them as well and removes any margin on the top that they may have had previously. */
     div.col-1-10 {
         margin-left: 5%;
         margin-top: 0%;
     }
 
-
+    /* The code block below aligns the navigation in the center of its container and does not display the bar on the screen at first. */
     nav {
         text-align: center;
         display: none;
     }
 
+    /* The code block below makes the navicon visible on the screen afetr having previously not being visile when the page was being viewed on a computer screen or any larger screens. This also determines both the size of the navicon and its width in the header. */
     label#navButton {
         display: block;
         cursor: pointer;
@@ -155,15 +149,16 @@
         font-size: 40px;
     }
 
+    /* The code blcok below removes any padding that was previously applies to the ul element and gives it a width of 100% of its container, thus stretching the width of the browser window. */
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         width: 100%;
-
     }
 
+    /* The code block below sets the how the navigation list items will appear on the page, having each one of the take up 20% of the header and being floated to the right of their container. */
     #nav li {
         list-style-type: none;
         display: block;
@@ -174,26 +169,31 @@
         padding: 25px 20px 20px 20px;
     }
 
+    /* The style below allows for the links previously hidden on the page to be displayed once the navicon is clicked by the user. Such an navigation allows for page naviagation to be easier on mobile devices as opposed to having a horizontal naviagtion alway present. */
     input#toggle:checked+nav {
         display: block;
     }
 
+    /* The style below states that the element with an id of homeImage will take up 50% of its containers width. */
     #homeImage {
         width: 50%;
     }
 
-    div.col-4-10 {
-        /* width: 100%; */
+    /* The style below removes any padding located at the top of the image element with the class of slideShowImages.  */
+    div.col-4-10 img.slideShowImages{
+        padding-top: 0px;
     }
 
-    div.col-6-10 {
-        width: 100%;
-    }
-
+    /* The following code blocks below allows for the H1 text to not overlap over itself when the page is collapsed to a smaller size or displayed on a mobile device. */
     #aboutH1 {
         line-height: 35px;
     }
 
+    #contactH1 {
+        line-height: 50px;
+    }
+
+    /* The following code blocks set the width of each div with the specified class to 100%. This allows for each section of the page to appear on top of one another, making the pages easier to navigate when on a mobile device that has a smaller screen. */
     div.col-3-10 {
         width: 100%;
     }
@@ -202,18 +202,17 @@
         width: 100%;
     }
 
-    div.col-4-10 {
-        /* width: 50%; */
+    div.col-6-10 {
+        width: 100%;
     }
 
-    #contactH1 {
-        line-height: 50px;
-    }
-
+    /* The code block below adds both top and bottom padding to the top and bottom of the contactForm div in order to add space between different sections of the page. */
     div#contactForm {
-        padding-top: 40px;
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
 
+    /* The style below applys a margin to the right of the button element in ordre to have the element centered in it's container. */
     button#submite {
         margin-right: 10px;
     }

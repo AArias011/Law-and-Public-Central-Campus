@@ -1,32 +1,31 @@
 @charset "UTF-8";
+/* Styles on this file will only be applied to the website's About page. */
 
 /* Page Text Styles */
+
+/* The code block below adds 30px of padding around the entire article element, allowing for the element to not seem as close or cluttered when displayed on the page with the other elements. The font size property makes the font bigger and more readable for the user. The line height property likewise makes the text easier to read by making sure that each text line is not so close to one another. */
 article {
     padding: 30px;
     font-size: 20px;
     line-height: 23px;
 }
 
+/* The code block below states that the H1 elemments will not be placed strictly on a single area of the page and are able to move upon the screen changing. Along with that the elements are made bigger and are styles in a way which allows them to stand out more readily to the user. This is important as the H1 elements serve as the titles of each section which tell the user about the text on the page. */
 h1 {
     position: relative;
     font-size: 2em;
     text-decoration: underline #f7941d;
     padding: 30px 0px 30px 0px;
-    ;
 }
 
-aside {
-    background-color: rgba(246, 146, 30, 0.8);
-    height: 100%;
-    display: block;
-}
-
+/* The code block below styles the image of the instuctor that is located in the aside element of the page. It makes the image take about 80% of the width of its container while adding margin around the image which allows it to look centered in its container. */
 aside img {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
 }
 
+/* The code block below styles the H1 elements nested within the aside element. It causes the text to be alligned in the center of the aside while also making the text big enough to stand out amongst the rest of the text. The padding element allows for more the text to not appear too close to the tope fo the aside element or the rest of the text on the page. */
 aside h1 {
     text-align: center;
     font-size: 2.5em;
@@ -35,48 +34,49 @@ aside h1 {
     color: white;
 }
 
+/* The code block below aligns the h2 element nested inside of the aside element in the center while alos increasing the text size and adding top and bottom padding to the element to seperate it from any other text in the element. */
 aside h2 {
     text-align: center;
     font-size: 1.5em;
     padding: 15px 0px;
 }
 
-aside {
-    background-color: rgba(246, 146, 30, 0.8);
-}
-
+/* The code block below places the paragraph text nested in teh aside in the middle of the element, without aligning the text itself in the middle,The line height property adds more spacing in between each line of text in the element in order to allow the user to be able to read the text more easily. */
 aside p {
     padding-left: 10%;
     padding-right: 10%;
     line-height: 25px;
 }
 
-aside::before,
-aside::after {
-    box-sizing: border-box;
-}
-
 /* Grid Styles */
+
+/* The styles below serve as a layout for the page, allowing for two elements to appear side by side and only take up the alloted screen width. */
+
+/* The code block below changes the background color of the row element to the color specified while also saying that any floated elements arounf it will be cleared, thus making sure that the row takes up the entire screen with. */
 div.row {
     clear: both;
     background-color: #f7941d;
 }
 
+/* The code block below deals with any container collapse that may occur in the element, making sure that all the elements nested within stay in the container. */
 div.row::after {
     clear: both;
     content: "";
     display: table;
 }
 
+/* The code block below states that any div element that has a class that begins with col will be floated to the left of the screen. This allows for two elements to be placed side by side of one another without any conflicts in spacing.  */
 div[class^="col-"] {
     float: left;
 }
 
+/* The code block below states that the content in the div element with a class of col-7-10 will take up 70% of the browsers width. Along with that, the color of the div will be white and thus overwrites the previous orange color set for the row div.*/
 div.col-7-10 {
     width: 70%;
     background-color: white;
 }
 
+/* The style below states that the div element with a class of col-3-10 will take up 30% of the browsers width. This means that together, both of the divs will take up 100% of the browsers width.*/
 div.col-3-10 {
     width: 30%;
 }

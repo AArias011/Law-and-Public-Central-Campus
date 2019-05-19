@@ -1,6 +1,6 @@
 @charset "utf-8";
-/* Basic styles to be used with all devices and under all conditions */
 
+/* Styles within this file remove any original browser styles that come with the page, allowing for us to style the page however we would like to without having to deal with the brwoser default styles interfering. */
 article,
 aside,
 figcaption,
@@ -61,9 +61,6 @@ colgroup {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
-/* Set the default page element styles */
 
 body {
     line-height: 1.2em;
